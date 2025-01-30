@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Urban Klub</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+
+		<style>
+			.sticky-header {
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				background-color: #2c3e50;
+			}
+
+			.close-menu {
+				display: none;
+				font-size: 24px;
+				cursor: pointer;
+				color: white;
+			}
+
+			@media (max-width: 768px) {
+				.close-menu {
+					display: none;
+				}
+
+				.nav-links.active + .close-menu {
+					display: block;
+				}
+			}
+
+			/* Responsiveness fix for the batches section */
+			.batch-cards {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 30px;
+				justify-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- Top Header -->
+			<div class="top-header">
+				<div class="contact-info">
+					<span><i class="fas fa-phone"></i> +91 1234567890</span>
+					<span><i class="fas fa-envelope"></i> info@urbancoaching.com</span>
+				</div>
+				<div class="announcement">
+					<marquee
+						>Admissions Open for ECET, EAMCET, and Diploma Tuitions!</marquee
+					>
+				</div>
+			</div>
+
+			<!-- Bottom Header -->
+			<div class="bottom-header sticky-header">
+				<div class="logo">
+					<img src="urban.jpg" alt="Urban Coaching Institute Logo" />
+				</div>
+				<nav>
+					<ul class="nav-links" id="nav-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#faculty">Faculty</a></li>
+						<li><a href="#achievements">Achievements</a></li>
+						<li><a href="#batches">Batches</a></li>
+					</ul>
+					<div class="hamburger" id="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="close-menu" id="close-menu">
+						<i class="fas fa-times"></i>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="hero" id="home">
+			<div class="hero-content">
+				<h1>Welcome to Urban Coaching Institute</h1>
+				<p>Your Gateway to Success in ECET, EAMCET, and Diploma Subjects</p>
+				<a href="#batches" class="cta-button">Join Now</a>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="about">
+			<h2>About Urban Klub</h2>
+			<p>
+				Urban Klub is a leading ECET coaching institute dedicated to helping
+				students excel in their ECET examinations. Our experienced faculty,
+				innovative teaching methods, and supportive environment set us apart in
+				the field of ECET preparation.
+			</p>
+			<a href="#" class="read-more">Learn More</a>
+		</section>
+
+		<section class="faculty">
+			<h2>
+				Our Faculty
+				<i class="fas fa-chalkboard-teacher heading-img"></i>
+			</h2>
+			<div class="faculty-grid">
+				<div class="faculty-card">
+					<img src="./teacher1.jpg" alt="Maths Expert" class="faculty-img" />
+					<h3>Satya Narayana</h3>
+					<p>Senior Maths Faculty</p>
+				</div>
+				<div class="faculty-card">
+					<img src="./teacher2.jpg" alt="physics sir" class="faculty-img" />
+					<h3>Praveen</h3>
+					<p>Physics Expert</p>
+				</div>
+				<div class="faculty-card">
+					<img src="./teacher1.jpg" alt="Chemistry Sir" class="faculty-img" />
+					<h3>Naveen</h3>
+					<p>Chemistry Expert</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="achievements">
+			<h2><span class="heading-icon">✨</span> Our Achievements</h2>
+			<div class="achievement-cards">
+				<div class="achievement-card" style="background-color: #ffe4e1">
+					<div class="achievement-icon">🏆</div>
+					<h3>100% Placement Record</h3>
+					<p>
+						Our students have a 100% placement record in top engineering
+						colleges.
+					</p>
+					<button class="explore-btn">Explore</button>
+				</div>
+				<div class="achievement-card" style="background-color: #f0f8ff">
+					<div class="achievement-icon">🌟</div>
+					<h3>Consistent Top Ranks</h3>
+					<p>
+						Our students consistently secure top ranks in the ECET examinations.
+					</p>
+					<button class="explore-btn">Explore</button>
+				</div>
+				<div class="achievement-card" style="background-color: #fef9e7">
+					<div class="achievement-icon">📚</div>
+					<h3>Experienced Faculty</h3>
+					<p>
+						Our faculty members have extensive experience in ECET preparation.
+					</p>
+					<button class="explore-btn">Explore</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="batches">
+			<h2>
+				Upcoming Batches
+
+				<img
+					src="./images/Screenshot 2025-01-25 213811.png"
+					alt="Small Image"
+					class="heading-image"
+				/>
+				<!-- Small image beside the title -->
+			</h2>
+			<div class="batch-cards">
+				<div class="batch-card" style="background-color: #ffe4e1">
+					<div class="batch-icon">📅</div>
+					<h3>ECET Batch 1</h3>
+					<p>Start: June 1, 2023</p>
+					<p>End: September 30, 2023</p>
+					<p>Duration: 4 months</p>
+				</div>
+				<div class="batch-card" style="background-color: #f0f8ff">
+					<div class="batch-icon">🔔</div>
+					<h3>ECET Batch 2</h3>
+					<p>Start: September 1, 2023</p>
+					<p>End: December 31, 2023</p>
+					<p>Duration: 4 months</p>
+				</div>
+				<div class="batch-card" style="background-color: #fef9e7">
+					<div class="batch-icon">🎓</div>
+					<h3>ECET Batch 3</h3>
+					<p>Start: December 1, 2023</p>
+					<p>End: March 31, 2024</p>
+					<p>Duration: 4 months</p>
+				</div>
+				<div class="batch-card" style="background-color: #d1f7e2">
+					<div class="batch-icon">🔥</div>
+					<h3>ECET Batch 4</h3>
+					<p>Start: March 1, 2024</p>
+					<p>End: June 30, 2024</p>
+					<p>Duration: 4 months</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-content">
+				<div class="contact-details">
+					<h3>Contact Us</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country
+					</p>
+					<p><i class="fas fa-phone"></i> +91 1234567890</p>
+					<p><i class="fas fa-envelope"></i> info@urbancoaching.com</p>
+				</div>
+				<div class="social-media">
+					<h3>Follow Us</h3>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+				<div class="quick-links">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#faculty">Faculty</a></li>
+						<li><a href="#achievements">Achievements</a></li>
+						<li><a href="#batches">Batches</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2023 Urban Coaching Institute. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<!-- Scroll to Top Button -->
+		<button id="scrollToTop" class="scroll-to-top">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+
+		<!-- JavaScript -->
+		<script src="script.js"></script>
+	</body>
+</html>
